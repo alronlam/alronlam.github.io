@@ -76,15 +76,19 @@ const last_posts = posts.slice(0, 3);
     url="https://huggingface.co/spaces/alronlam/bible-search"
     github_url="https://github.com/alronlam/bible-search"
     badge="NLP"
+    tags={["HuggingFace", "Sentence Transformers", "scikit-learn", "Streamlit"]}
+    activate_tag_url={false}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="UNICEF AI4D Relative Wealth Mapping for SEA"
     img="/project_imgs/sea_rwi_mapping.PNG"
     desc="Relative wealth estimates for 9 Southeast Asian countries. This is similar to Meta's Realtive Wealth Index estimates, but utilizing only open datasets and low-cost Random Forest models. We made this as a baseline work for SEA with an emphasis on replicability to spur further research in the region and beyond."
-    url="https://studio.foursquare.com/public/590c4ab2-b855-463a-90dd-9917b97b8b57"
+    url="https://thinkingmachines.github.io/unicef-ai4d-poverty-mapping/"
     github_url="https://github.com/thinkingmachines/unicef-ai4d-poverty-mapping"
     badge="Geo"
+    tags={["scikit-learn", "GeoPandas", "GeoWrangler", "Foursquare Studio"]}
+    activate_tag_url={false}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -93,6 +97,7 @@ const last_posts = posts.slice(0, 3);
     desc="Python library to cut down dev time for geo-data processing and feature engineering so Data Scientists can focus on analysis or ML modelling. We made this to support common geo-data wrangling steps in our client projects, including our SEA Poverty Mapping work with UNICEF. I acted as Product Manager for this project."
     url="https://geowrangler.thinkingmachin.es/overview.poverty_mapping_demo.html"
     github_url="https://github.com/thinkingmachines/unicef-ai4d-poverty-mapping"
+    tags={["nbdev", "quarto", "GeoPandas", "rasterstats"]}
     badge="Geo"
   />
   <div class="divider my-0"></div>
@@ -103,6 +108,8 @@ const last_posts = posts.slice(0, 3);
     url="https://alronlam.github.io/less-than-three/"
     github_url="https://github.com/alronlam/less-than-three"
     badge="Game Dev"
+    tags={["JavaScript"]}
+    activate_tag_url={false}
   />
 
   <div>
@@ -119,6 +126,7 @@ const last_posts = posts.slice(0, 3);
           url={"/blog/" + post.slug}
           target="_self"
           badge={post.data.badge}
+          tags={post.data.tags}
         />
         <div class="divider my-0" />
       </>
