@@ -5,6 +5,7 @@ const {
   desc,
   url,
   github_url,
+  bitbucket_url,
   youtube_url,
   badge,
   tags,
@@ -73,6 +74,26 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
                   class="mr-2"
                 />
                 GitHub
+              </a>
+            </>
+          )
+        }
+        {
+          bitbucket_url && (
+            <>
+              <a
+                class="link flex items-center"
+                href={bitbucket_url}
+                target="_blank"
+              >
+                <Image
+                  src="/bitbucket_icon.png"
+                  width={20}
+                  height={20}
+                  alt="Bitbucket"
+                  class="mr-2"
+                />
+                Bitbucket
               </a>
             </>
           )
